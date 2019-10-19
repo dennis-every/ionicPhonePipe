@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { MaskPipe } from '../pipes/mask.pipe';
+import { PhonePipe } from '../pipes/phone.pipe';
 
 @NgModule({
   imports: [
-    CommonModule,
+CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild([
@@ -18,6 +20,6 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, MaskPipe, PhonePipe]
 })
 export class HomePageModule {}
